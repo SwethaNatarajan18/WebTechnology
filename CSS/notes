@@ -1,0 +1,74 @@
+CSS - Cascading Style Sheet
+
+
+
+
+
+
+
+simple selectors
+    1-tagname()
+    2-id(used to identity uniquely  i.e targeting an element indvidualy (css))(#)
+    3-class(whwnever we need to give same css for more than 1 element)(.)
+    4-universal
+    5-group
+    css?
+    how many ways?
+    types?
+    selctors?
+
+
+
+    Inline CSS(high priority)
+Ext
+
+used for applyng the styling and arrangng the 
+
+Inline css:
+*given in same line
+*style attribute
+
+Internal css:
+writing the css in same html file
+ for the style (tag)inside the head we have to take head tag
+
+
+ writing in css file
+ we are using
+
+
+
+ 1. tagname selector/
+
+nav{
+    background-color: orange;
+    height: 100px;
+}
+main{
+    background-color: blue;
+    height: 250px;
+}
+/id selector/
+#logo{
+    color:darkblue;
+}
+section{
+    background-color: blueviolet;
+    height: 250px;
+}
+/class selector/
+.para{
+    color: red;
+}
+/4.universal selector/
+*{
+    text-align:center;
+    font-style: italic;
+}
+/group selector/
+p , #logo{
+    text-decoration: underline;
+}
+/*h1,p{
+    text-decoration:underline;
+}*/

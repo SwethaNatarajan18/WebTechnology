@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 500px;
+    width: 900px;
+    border: 3px solid black;
+    display: flex;
+
+    /*flex-direction: row;/* /* Change to column to stack vertically */
+   /* flex-direction: row-reverse;*/
+   /* flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+
+    justify-content: center;
+   /* justify-content: space-between;*/
+   justify-content: space-evenly;
+
+    /*align-items: center;*/
+    gap: 20px; /* Space between flex items */
+
+}
+
+.container >.box{
+    height: 80px;
+    width: 80px;
+    border: 3px solid red;
+    color: white;
+    align-items: center;
+}
+
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+
+}
+
+

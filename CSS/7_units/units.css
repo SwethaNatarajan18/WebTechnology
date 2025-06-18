@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*universal selector-- mandatory otherwise takes browwser sixe*/
+
+.con2{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+}
+
+.con2 > .box2{
+    width: 300px;
+    height:200px ;
+    background-color: yellow;
+}
+/*absolute(fixedunit(px,cm mm) ),fxed unt 
+relative unit(vh,vw)
+%
+vh(viewport)comapre with the view port that is viewing size
+
+.con2{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+}
+
+.con2 > .box2{
+    width: 50%;
+    height:50% ;
+    background-color: yellow;
+}
+    here it takes half of the width and heigth
+
+.con2{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+}
+
+.con2 > .box2{
+    width: 50%;
+    height:50% ;
+    background-color: yellow;
+}
+*/
+.con1{
+    background-color: black;
+    height: 50vh;
+    width: 60vh;
+}
+
+
+
