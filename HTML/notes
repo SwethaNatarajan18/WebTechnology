@@ -1,1 +1,42 @@
+code to open in vs code ----> go to path and  remove path and type cmd iin cmd  write (code + space + . ) 
+shift + 1----->gives strucutre of the html strucutre
+windows + . ---->gives emoji
+alt + z ------->makes content viewable 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+HTML -> (HyperText Markup Language)
+
+Hypertext - text that contains links which makes user to jump from one document to another 
+Markup    -used to define the strucutre and presentation of content in a document
+
+<!Doctype html> --> tells the version of html
+<meta charset="UTF-8">  --> character encoding for the document
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> --> responsive page used to display on other devices
+
+html (attribute):<html lang="en">
+*lang="en"
+
+meta (attribute):<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*content
+*name
+*charset(makes character encoding)
+
+
+Tags  -> 
+ predefined keywords enclosed in angular  braces < > 
+ each tag has a specific purpose and behaviour
+
+Element ->
+combination of tagname and the content
+<tagname> content </tagname>
+
+Types of Tags ->
+
+* Paired Tag (opening and closing tag) 
+<p></p> , <h1> </h1> ,<div> </div> , <span> </span>
+
+* Unpaired Tag (only opening so also called as self-closing tag)
+<meta> , <hr> , <br> ,<input>
+
 
