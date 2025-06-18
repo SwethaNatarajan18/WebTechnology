@@ -256,21 +256,39 @@ FORM TAG :-
 used to collect user information
 block-level element
 
-Form (Attributes):
-*action 
-*method
-*autocomplete
+syntax:-
+    <form action="">
+        <fieldset>
+            <legend></legend>
+            <label for=""></label>
+            <input type="text">
+            <textarea name="" id=""></textarea>
+            <select name="" id="">
+                <option value=""></option>
+            </select>
+            <button></button>
+        </fieldset>
+    </form>
 
-label(attirbutes):
-*for
 
-input(attributes):
-*type
-*id
-*name
-*placeholder
-*value
-*required
-*min length
-*max length
+
+Form (Attributes):semantic type elemenet , defnes the begining of the form
+*action (creates url where form should be submitted)
+*method (get(not secure),post(secureed in http body))
+*autocomplete (on,off)
+
+label(attirbutes):(specifies the purpose of the input filed)
+*for (matches the id of the input elemenmt)
+
+input(attributes):(collect user data)
+*type(type of the field)
+*id(provides unique identification)
+*name (makes to provide name for the input fiield)
+*placeholder (displays a hint text inside the input field)
+*value (tells the intal value of the i/p field)
+*required (makes the feld mandatory to be flled)
+*readonly(prevents modification by the user)
+*disabled(disable the input field)
+*min length ,max length (defines the length of the field)
+*autofocus(automaticaly focuses on the input field when page loads)
 ------------------------------------------------------------------------------------------------------
