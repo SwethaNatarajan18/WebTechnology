@@ -2,8 +2,16 @@ code to open in vs code ----> go to path and  remove path and type cmd iin cmd  
 shift + 1----->gives strucutre of the html strucutre
 windows + . ---->gives emoji
 alt + z ------->makes content viewable 
-
-
+p*5 ------> gives 5 paragraph
+lorem5 -----> gives some paragraph
+p{paragraph-$}*5 ----->produces 
+     <p>paragraph-1</p>
+     <p>paragraph-2</p>
+     <p>paragraph-3</p>
+     <p>paragraph-4</p>
+     <p>paragraph-5</p>
+download extensions -----> auto close tag, auto rename tag
+ctrl+d ----> shows the table of content 
 --------------------------------------------------------------------------------------------------------------------------
 HTML -> (HyperText Markup Language)
 
@@ -33,6 +41,8 @@ Tags  ->
 Element ->
 combination of tagname and the content
 <tagname> content </tagname>
+
+Types of Element
 
 Types of Tags ->
 
@@ -83,39 +93,39 @@ List of Formatting Tags :
 <pre></pre>   displays how writtens 
 <big></big>   makes the content in upper case
 <small></small>  makes the content in lower case
-    
+-----------------------------------------------------------------------------------------------------
+ELEMENTS IN HTML :
+-----------------------------------------------------------------------------------------------------
+combination of tagname and the content
 
+syntax :
+<tagname>content</tagname>
 
+Types of Elements : inline ,block ,inline-block
 
+*inline level element (same line , no height and width) takkes content size
+ex:formatting tags (<b></b> , <i></i>)
 
+*block level element  (takes full width of its parent , has height and width)
+ex:heading tags ( <h1> </h1> , <div> </div> )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-html (attribute):<html lang="en">
-*lang="en"
-
-meta (attribute):<meta name="viewport" content="width=device-width, initial-scale=1.0">
-*content
-*name
-*charset(makes character encoding)
+*inline-block level element (same line , has height and width)
+ex:<img src="" alt="">
+    <input type="text">
+    <button></button>
+    <select name="" id=""></select>
+    <textarea name="" id=""></textarea>
+-----------------------------------------------------------------------------------------------------
+ATTIRBUTES in HTML :
+-----------------------------------------------------------------------------------------------------
+additional information produced inside opening tag
+syntax:
+<element attribute="value"> content </element>
+-----------------------------------------------------------------------------------------------------
+AUDIO AND VIDEO TAG  AND IFRAME TAG :
+-----------------------------------------------------------------------------------------------------
+Audio Tag :-
+used to embed sound content in the web page
 
 audio (attributes): <audio src=""></audio>
 *src (path will be given)
@@ -123,6 +133,9 @@ audio (attributes): <audio src=""></audio>
 *autoplay (automatic playing will be done once loads)
 *loop (repeats the audio)
 *muted (mutes the audio)
+
+Video Tag :-
+used to embed the video content into the webpage
 
 video (attributes): <video src=""></video>
 *src (path setup)
@@ -132,32 +145,75 @@ video (attributes): <video src=""></video>
 *muted (mutes the video by default)
 *width and height (used to resize )
 
+Iframe Tag :-
+makes to display other webpage into current webpage
+we can also add MAP in this page using embed url
+
 IFrame (attributes) :  <iframe src="" frameborder="0"></iframe>
 *src (specifies the url of embeded content)
 *width and height (used to resize)
 *frameborder (o-no border , 1-has border)
+------------------------------------------------------------------------------------------------------
+IMAGE TAG :
+------------------------------------------------------------------------------------------------------
+used to add images 
+self closing or unpaired tag
+inline block level element
 
 image(attributes):  <img src="" alt="">
 *src (provide image address of the image need to show on browser)
 *alt (alternate message will be produced if image not loaded )
 *height and width (resize the image need)
 *title (whle touching name will be displayed)
+------------------------------------------------------------------------------------------------------
+LIST IN HTML :
+------------------------------------------------------------------------------------------------------
+groups the related items together in a  structured format
+
+TYPES OF LIST :
+
+*Ordered List   <ol> <li> </li> </ol>
+*UnOrdered List     <ul> <li> </li> </ul>
+*Description List   <dl> <dt> </dt> <dd> </dd> </dl>
+
+1.ORDERED LIST :
+group related items in a sequential order
+(default type -numbers)
 
 ordered List (attributes):
 *type (roman ,integer ,alphabet small and big)
 *start
 *reversed
 
+2.UNORDERED LIST :
+display the set of relted items without any order
+(default type -bullets)
+
 unordered list (attributes):
 *type( disc ,circle ,square ,none)
     
+3.DESCRIPTIION LIST :
+shows list and their description
+
 Description list( no attributes):
+------------------------------------------------------------------------------------------------------
+ANCHOR TAG :-
+------------------------------------------------------------------------------------------------------
+creates hyperlink whch alows user to see on same page or on different page
+syntax:
+<a href=""></a>
 
 Anchor Tag (attributes): img also we can add 
 *href (detination URL is placed here)---call the target by #idname ex: href="#hello"
 *target( _blank (opens in next tab), _self (opens in current tab))
 *title (while touching shows the name )
 *id(css)--used to target the place ex:"id=hello"
+------------------------------------------------------------------------------------------------------
+MARQUEE TAG :-
+------------------------------------------------------------------------------------------------------
+makes scrolling the text or elements or webpage
+syntax:
+<marquee behavior="" direction=""></marquee>
 
 Marquee (attributes):
 *behavior (scroll , slide (go and stops), alternate(go and returns in same direction))
@@ -165,15 +221,40 @@ Marquee (attributes):
 *scrollamount (default value is 6)larger number makes content scroll faster
 *loop (tells how many time  the content to scroll)
 *height and width (specifies height of the container in pixels and percentage)
+------------------------------------------------------------------------------------------------------
+TABLE TAG :-
+------------------------------------------------------------------------------------------------------
+combination of rows and columns
+provides structured layout for displayng content
+synatx:
+<table>
+        <caption>        </caption>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+</table>
+<tr> </tr> --->table row
+<th> </th> ---> table header
+<td> </td  ---> table data
+table-->creats table
+caption-->add title
 
 Table(Attributes) :
-
 *Border(around the table and cells )
 *width and height (resize the table in dimension)
 *cellspacing (gives space outside the cell, between the cell)
 *cellpadding (space b/w the content and the border)
+MERGING CELLS:
 *colspan - combine columns
 *rowspan - combine rows
+------------------------------------------------------------------------------------------------------
+FORM TAG :-
+------------------------------------------------------------------------------------------------------
+used to collect user information
+block-level element
 
 Form (Attributes):
 *action 
@@ -192,3 +273,4 @@ input(attributes):
 *required
 *min length
 *max length
+------------------------------------------------------------------------------------------------------
