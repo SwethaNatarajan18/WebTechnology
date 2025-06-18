@@ -1,0 +1,51 @@
+simple selectors
+    1-tagname()
+    2-id(used to identity uniquely  i.e targeting an element indvidualy (css))(#)
+    3-class(whwnever we need to give same css for more than 1 element)(.)
+    4-universal
+    5-group
+    css?
+    how many ways?
+    types?
+    selctors?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+display(properties)
+*block
+*inline block
+*inlne
+*none
+*flex(gap property is used to give space between the elements in flex container)
+
+flex -(arrange the elements in rowise or columnwise)default value is row
+flex-direction 
+(row, row-reverse, column, column-reverse)
+
+justify-content
+ (flex-strat is default) (space-between, space-evenly ,space-around, center, flex-start, flex-end)
+arranges in main axis(what is the flex-direction that is the main axis)
+align-items (flex-start, flex-end, center, baseline, stretch)
+
+columnwise arrange in center 
+
+if any thing in apage nned  to be center then use parent to use 
+align-items: center;
+display: flex;
+justify-content: center;
+
+justify-content: space-between; makes the space according to the width it have
+same for align-items: space-between; 

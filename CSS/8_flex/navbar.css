@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    background-color:orangered;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+nav > ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    width: 50vh;
+    justify-content: space-between;
+    
+}
+
+nav > div >button {
+    border-radius: 10px;
+    padding:5px;
+    height: 30px;
+    margin: 20px;
+    background-color: rgb(172, 206, 171);
+    cursor: pointer;
+    color:orangered;
+    
+}
+
+nav > div >button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+nav > h1:nth-child(1){
+    cursor: pointer;
+    color: rgb(170, 28, 170);
+    width: 10px;;
+}
+nav > h1 > span:nth-child(2){
+    cursor: pointer;
+    color: rgb(197, 65, 87);
+}
+nav >h1{
+    display:flex;
+}
+
+
+
+
+

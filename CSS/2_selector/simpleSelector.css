@@ -1,0 +1,40 @@
+/*! 1. tagname selector*/
+
+nav{
+    background-color: orange;
+    height: 100px;
+}
+main{
+    background-color: blue;
+    height: 250px;
+}
+/*id selector*/
+#logo{
+    color:darkblue;
+}
+
+#lo{
+    color: blueviolet;
+}
+section{
+    background-color: blueviolet;
+    height: 250px;
+}
+/*class selector*/
+.para{
+    color: yellow;
+    background-color: black;
+    text-decoration: none;
+}
+/*4.universal selector----targets all elements*/
+*{
+    text-align:center;
+    font-style: italic;
+}
+/*group selector can group*/
+p , #logo{
+    text-decoration: underline;
+}
+/*h1,p{
+    text-decoration:underline;
+}*/
