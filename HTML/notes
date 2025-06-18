@@ -13,6 +13,9 @@ Markup    -used to define the strucutre and presentation of content in a documen
 <!Doctype html> --> tells the version of html
 <meta charset="UTF-8">  --> character encoding for the document
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> --> responsive page used to display on other devices
+<head> </head> --> contains meta information
+<body> </body> --> contains content need to be displayed on the web page or browser
+<title> </title> --> sets the title appeared on the browser tab
 
 html (attribute):<html lang="en">
 *lang="en"
@@ -39,4 +42,153 @@ Types of Tags ->
 * Unpaired Tag (only opening so also called as self-closing tag)
 <meta> , <hr> , <br> ,<input>
 
+Day 1:
+-----------------------------------------------------------------------------------------------------
+HEADING TAG : (6 heading tags ) 
+------------------------------------------------------------------------------------------------------
+used to define heading and subheading 
 
+syntax:
+    <h1>2em</h1>
+    <h2>1.5em</h2>
+    <h3>1.17em</h3>
+    <h4>1em</h4>
+    <h5>0.83em</h5>
+    <h6>0.67em</h6>
+default values are in (em) units
+(1em = 1pixels) 
+-----------------------------------------------------------------------------------------------------
+PARAGRAPH TAG : 
+------------------------------------------------------------------------------------------------------
+group a block of text as a paragraph
+
+syntax:
+    <p></p>
+-----------------------------------------------------------------------------------------------------
+FORMATTING TAG :
+------------------------------------------------------------------------------------------------------
+used to change the appearance of the content or text
+
+List of Formatting Tags :
+
+<b></b>     <strong></strong>(high priorty)  makes the content bold
+<i></i>     <em></em>(high priorty)  makes the content italic
+<u></u>     <ins></ins>(high priorty)  makes the content underline
+<strike></strike>       <del></del>(high priorty) makes a middle line
+<mark></mark> marks the content in color
+<sub></sub> below the baseline
+<sup></sup> above the baseline
+<q></q>   puts quotation
+<code></code>  can make code
+<pre></pre>   displays how writtens 
+<big></big>   makes the content in upper case
+<small></small>  makes the content in lower case
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html (attribute):<html lang="en">
+*lang="en"
+
+meta (attribute):<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*content
+*name
+*charset(makes character encoding)
+
+audio (attributes): <audio src=""></audio>
+*src (path will be given)
+*controls (displays audio controls like play,pause, volume)
+*autoplay (automatic playing will be done once loads)
+*loop (repeats the audio)
+*muted (mutes the audio)
+
+video (attributes): <video src=""></video>
+*src (path setup)
+*controls (displays the video controls like play ,pause ,volume ,fullscreen)
+*autoplay (palys automaticaly while loads)
+*loop (repeats the video)
+*muted (mutes the video by default)
+*width and height (used to resize )
+
+IFrame (attributes) :  <iframe src="" frameborder="0"></iframe>
+*src (specifies the url of embeded content)
+*width and height (used to resize)
+*frameborder (o-no border , 1-has border)
+
+image(attributes):  <img src="" alt="">
+*src (provide image address of the image need to show on browser)
+*alt (alternate message will be produced if image not loaded )
+*height and width (resize the image need)
+*title (whle touching name will be displayed)
+
+ordered List (attributes):
+*type (roman ,integer ,alphabet small and big)
+*start
+*reversed
+
+unordered list (attributes):
+*type( disc ,circle ,square ,none)
+    
+Description list( no attributes):
+
+Anchor Tag (attributes): img also we can add 
+*href (detination URL is placed here)---call the target by #idname ex: href="#hello"
+*target( _blank (opens in next tab), _self (opens in current tab))
+*title (while touching shows the name )
+*id(css)--used to target the place ex:"id=hello"
+
+Marquee (attributes):
+*behavior (scroll , slide (go and stops), alternate(go and returns in same direction))
+*direction (left(default), right , up ,down)
+*scrollamount (default value is 6)larger number makes content scroll faster
+*loop (tells how many time  the content to scroll)
+*height and width (specifies height of the container in pixels and percentage)
+
+Table(Attributes) :
+
+*Border(around the table and cells )
+*width and height (resize the table in dimension)
+*cellspacing (gives space outside the cell, between the cell)
+*cellpadding (space b/w the content and the border)
+*colspan - combine columns
+*rowspan - combine rows
+
+Form (Attributes):
+*action 
+*method
+*autocomplete
+
+label(attirbutes):
+*for
+
+input(attributes):
+*type
+*id
+*name
+*placeholder
+*value
+*required
+*min length
+*max length
