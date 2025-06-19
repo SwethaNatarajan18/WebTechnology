@@ -93,6 +93,30 @@ direct child----targets only children
 adjacent sibilng---targets only the first sbiling
 general sibiling---targets all sibiling
 
+3.Pseudo Selector :-
+:hover(used to change the apperarance of link when user hover or touches it)
+:first-child (applied to first child)
+:last-child(applied to last child}
+:nth-child()(matches based on their position in a group of sbilngs)
+:first-of-type(applies to the frist element of its type within a parent)
+:last-of-type(applies to the last element of its type within a parent)
+:link(apples lnks that not :visited)
+:active(applyies during the element is activated)
+:visited (applied once the link has beeen visited by the user)
+
+4.Pseudo Element Selector:- 
+::before(used to insert content before the element)
+::after(used to insert after the element)
+::first-line(appies styles to the first line of a block level element(usefull for creating drop caps))
+::first-letter(applies style to the first letter of a block-level element)
+::selection(applies at the postiion of highlighted by the user  )
+::marker(used to style the marker box such as bullet points and numbers)
+
+COMBINIING PESUDO ELELEEMNT WITH PSEUDO CLASSES FOR MORE ADVANCED STYLING
+
+ATTRIBUTE SELECTOR (target the element based on the attribute name)
+[attr]:    represents element with an attrbute name
+[attr = value]:  represents element eith an attribute name 
 
 
 
