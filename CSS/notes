@@ -1,217 +1,26 @@
-CSS - Cascading Style Sheet
-used for styliing and  presentation and arranging the values
 
-how many ways we can write ?
-or
-TYPES OF CSS :-
---------------------------------------------------------------------------------------------------------------------------
-*inline css (high prority)
-*internal css (starts at end of the head tag means 2nd priority)
-*externnal css (starts at end of the head tag means 2nd priority)
+display(properties)
+*block
+*inline block
+*inlne
+*none
+*flex(gap property is used to give space between the elements in flex container)
 
-1. Inline CSS :-
-*given in same line
-*using STYLE ATTRIBUTE
-*ex: <h1 style="color: red; text-align:center;"> CSS Introduction </h1>
+flex -(arrange the elements in rowise or columnwise)default value is row
+flex-direction 
+(row, row-reverse, column, column-reverse)
 
-2. Internal CSS :-
-*writing in  same html fieldset
-*using STYLE TAG 
-*ex: <style>
-        selectorname{
-            property:value;
-        }
-    </style>
+justify-content
+ (flex-strat is default) (space-between, space-evenly ,space-around, center, flex-start, flex-end)
+arranges in main axis(what is the flex-direction that is the main axis)
+align-items (flex-start, flex-end, center, baseline, stretch)
 
-3. External CSS:-
-*writing in separate css file 
-*and linking of css file with the html file 
-*ex: <link rel="stylesheet" href="./intro.css">
+columnwise arrange in center 
 
-LINK (attributes):
-*rel 
-*href 
---------------------------------------------------------------------------------------------------------------------------
-Div and SPAN TAG :- (non - semantic tags)-no meaning
---------------------------------------------------------------------------------------------------------------------------
-<div></div>  (block level element , used to group elements for styling and layout purpose , no meaning ,used for dividing webpage into sections)
+if any thing in apage nned  to be center then use parent to use 
+align-items: center;
+display: flex;
+justify-content: center;
 
-<span></span>  (inline level element , used to group text or inlline elements, no meaning , used for applying speecific styles to inline content )
---------------------------------------------------------------------------------------------------------------------------
-SEMANTIC TAGS :- has meaning
---------------------------------------------------------------------------------------------------------------------------
-*describes the meaning to the develeoper and browser
-*used to improve the structure,readability,accessblity of web page ,making easy for search engine ,screen readers,developer
-
-semantic tags are:-
-*<header>   </header> (tells introduction section  , contains group of navigaton links in webpage)
-*<nav>  </nav> (page links to other pages)
-*<main> </main> (main content of webpage that is unique to document , used for central content)
-*<article>  </article> (independent piece of content that could be reused such as blog)
-*<section>  </section>  (used to group related or thematic grouping of content)
-*<aside>    </aside>    (used for supplementary content)
-*<footer>   </footer>   (found at bottom of the page for copyright info,privacy policies,contact details)
-*<figure>   </figure>  (used for media (iimage,diagram,illustration) elements with caption)
-*<figcaption>   </figcaption> (used for givng caption for <figure></figure> element)
-*<mark> </mark> (text beeing hghlighted for reference prpose)
-*<details></details>    (used for hiding additonal information)
-*<summary></summary>    (used inside ddetails tag to provide headng or summary of the content)
-
---------------------------------------------------------------------------------------------------------------------------
-SELECTORS :-
---------------------------------------------------------------------------------------------------------------------------
-TYPES of SELECTORS : 
-*Simple Selector 
-*Combination Selector
-*Pseudo class Selector 
-*Pseudo element Selector
-*Attriibute Selector
---------------------------------------------------------------------------------------------------------------------------
-1.Simple Selector :- 
-types of simple selector (5)
-*TagName ( tagname )
-*Id ( # )
-*class ( . )
-*grouping ( , )
-*universal ( * )
-
-tagname------target the elements based on tagname itself
-id-----------target the element uniquely using id name (can be duplicated)
-class--------target same css for more than 1 element(class name can be repeated)
-grouping-----target multple element at a time
-universal----targets all the element in the document
-
-2.Combinator Selector:-(combnation of two simple selector)
-types of combinator selector (4)
-*Descendent Selector ( space )
-*Direct Child Selector ( > )
-*Adjacent Sibling Selector ( + ) 
-*General Sibilng Selector ( ~ )
-
-descendent----targets all children,grand children,great grand children
-direct child----targets only children
-adjacent sibilng---targets only the first sbiling
-general sibiling---targets all sibiling
-
-3.Pseudo Selector :-
-:hover(used to change the apperarance of link when user hover or touches it)
-:first-child (applied to first child)
-:last-child(applied to last child}
-:nth-child()(matches based on their position in a group of sbilngs)
-:first-of-type(applies to the frist element of its type within a parent)
-:last-of-type(applies to the last element of its type within a parent)
-:link(apples lnks that not :visited)
-:active(applyies during the element is activated)
-:visited (applied once the link has beeen visited by the user)
-
-4.Pseudo Element Selector:- 
-::before(used to insert content before the element)
-::after(used to insert after the element)
-::first-line(appies styles to the first line of a block level element(usefull for creating drop caps))
-::first-letter(applies style to the first letter of a block-level element)
-::selection(applies at the postiion of highlighted by the user  )
-::marker(used to style the marker box such as bullet points and numbers)
-
-COMBINIING PESUDO ELELEEMNT WITH PSEUDO CLASSES FOR MORE ADVANCED STYLING
-
-ATTRIBUTE SELECTOR (target the element based on the attribute name)
-[attr]:    represents element with an attrbute name
-[attr = value]:  represents element eith an attribute name 
---------------------------------------------------------------------------------------------------------------------------
-CSS UNITS :
---------------------------------------------------------------------------------------------------------------------------
-stands for measurement of physical quanties of the samee kind
-TYPES of UNITS :
-*Absolute Unit(fixed unit ,length wiill appear exactly tht size)
-*Relative Unit (length relatve to another length property)
-
-types of absolute units
-*MM (millimeter)
-*CM(centimeter)
-*PX(pixel)
-
-types of relative units
-*%(relative to parent)
-*vw(1viewport width=1%of width)
-*vh(1viewport height=1%of height)
-*em(1em=current font size of the element)
-*rem(1rem=font size of root element )
---------------------------------------------------------------------------------------------------------------------------
-FONT PROPERTY :- 
---------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------------------------------------------------------------------
-TEXT PROPERTY:-
---------------------------------------------------------------------------------------------------------------------------
-
-
-
---------------------------------------------------------------------------------------------------------------------------BOX-SIZING PROPERTIES
---------------------------------------------------------------------------------------------------------------------------
-
-
-
-
---------------------------------------------------------------------------------------------------------------------------
-BORDER PROPERTY
---------------------------------------------------------------------------------------------------------------------------
-
-
-
---------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-simple selectors
-    1-tagname()
-    2-id(used to identity uniquely  i.e targeting an element indvidualy (css))(#)
-    3-class(whwnever we need to give same css for more than 1 element)(.)
-    4-universal
-    5-group
-    css?
-    how many ways?
-    types?
-    selctors?
-
-
-
- 
- 1. tagname selector/
-
-nav{
-    background-color: orange;
-    height: 100px;
-}
-main{
-    background-color: blue;
-    height: 250px;
-}
-/id selector/
-#logo{
-    color:darkblue;
-}
-section{
-    background-color: blueviolet;
-    height: 250px;
-}
-/class selector/
-.para{
-    color: red;
-}
-/4.universal selector/
-*{
-    text-align:center;
-    font-style: italic;
-}
-/group selector/
-p , #logo{
-    text-decoration: underline;
-}
-/*h1,p{
-    text-decoration:underline;
-}*/
+justify-content: space-between; makes the space according to the width it have
+same for align-items: space-between; 
