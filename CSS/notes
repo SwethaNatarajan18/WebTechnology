@@ -1,4 +1,105 @@
 CSS - Cascading Style Sheet
+used for styliing and  presentation and arranging the values
+
+how many ways we can write ?
+or
+TYPES OF CSS :-
+--------------------------------------------------------------------------------------------------------------------------
+*inline css (high prority)
+*internal css (starts at end of the head tag means 2nd priority)
+*externnal css (starts at end of the head tag means 2nd priority)
+
+1. Inline CSS :-
+*given in same line
+*using STYLE ATTRIBUTE
+*ex: <h1 style="color: red; text-align:center;"> CSS Introduction </h1>
+
+2. Internal CSS :-
+*writing in  same html fieldset
+*using STYLE TAG 
+*ex: <style>
+        selectorname{
+            property:value;
+        }
+    </style>
+
+3. External CSS:-
+*writing in separate css file 
+*and linking of css file with the html file 
+*ex: <link rel="stylesheet" href="./intro.css">
+
+LINK (attributes):
+*rel 
+*href 
+--------------------------------------------------------------------------------------------------------------------------
+Div and SPAN TAG :- (non - semantic tags)-no meaning
+--------------------------------------------------------------------------------------------------------------------------
+<div></div>  (block level element , used to group elements for styling and layout purpose , no meaning ,used for dividing webpage into sections)
+
+<span></span>  (inline level element , used to group text or inlline elements, no meaning , used for applying speecific styles to inline content )
+--------------------------------------------------------------------------------------------------------------------------
+SEMANTIC TAGS :- has meaning
+--------------------------------------------------------------------------------------------------------------------------
+*describes the meaning to the develeoper and browser
+*used to improve the structure,readability,accessblity of web page ,making easy for search engine ,screen readers,developer
+
+semantic tags are:-
+*<header>   </header> (tells introduction section  , contains group of navigaton links in webpage)
+*<nav>  </nav> (page links to other pages)
+*<main> </main> (main content of webpage that is unique to document , used for central content)
+*<article>  </article> (independent piece of content that could be reused such as blog)
+*<section>  </section>  (used to group related or thematic grouping of content)
+*<aside>    </aside>    (used for supplementary content)
+*<footer>   </footer>   (found at bottom of the page for copyright info,privacy policies,contact details)
+*<figure>   </figure>  (used for media (iimage,diagram,illustration) elements with caption)
+*<figcaption>   </figcaption> (used for givng caption for <figure></figure> element)
+*<mark> </mark> (text beeing hghlighted for reference prpose)
+*<details></details>    (used for hiding additonal information)
+*<summary></summary>    (used inside ddetails tag to provide headng or summary of the content)
+
+--------------------------------------------------------------------------------------------------------------------------
+SELECTORS :-
+--------------------------------------------------------------------------------------------------------------------------
+TYPES of SELECTORS : 
+*Simple Selector 
+*Combination Selector
+*Pseudo class Selector 
+*Pseudo element Selector
+*Attriibute Selector
+--------------------------------------------------------------------------------------------------------------------------
+1.Simple Selector :- 
+types of simple selector (5)
+*TagName ( tagname )
+*Id ( # )
+*class ( . )
+*grouping ( , )
+*universal ( * )
+
+tagname------target the elements based on tagname itself
+id-----------target the element uniquely using id name (can be duplicated)
+class--------target same css for more than 1 element(class name can be repeated)
+grouping-----target multple element at a time
+universal----targets all the element in the document
+
+2.Combinator Selector:-(combnation of two simple selector)
+types of combinator selector (4)
+*Descendent Selector ( space )
+*Direct Child Selector ( > )
+*Adjacent Sibling Selector ( + ) 
+*General Sibilng Selector ( ~ )
+
+descendent----targets all children,grand children,great grand children
+direct child----targets only children
+adjacent sibilng---targets only the first sbiling
+general sibiling---targets all sibiling
+
+
+
+
+
+
+
+
 
 
 
@@ -19,25 +120,7 @@ simple selectors
 
 
 
-    Inline CSS(high priority)
-Ext
-
-used for applyng the styling and arrangng the 
-
-Inline css:
-*given in same line
-*style attribute
-
-Internal css:
-writing the css in same html file
- for the style (tag)inside the head we have to take head tag
-
-
- writing in css file
- we are using
-
-
-
+ 
  1. tagname selector/
 
 nav{
