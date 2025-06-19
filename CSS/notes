@@ -1,3 +1,384 @@
+always start css with 
+unversal selector as given below:
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+anything need to be center use
+
+display:flex;                (takes in row)
+justify-content:center;      (takes in column)
+align-item:center;           (takes to center)
+
+anything in border need to be curve use
+
+border-radius:value;
+value:- can be any numbers above 10px
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+CSS - Cascading Style Sheet
+used for styliing and  presentation and arranging the values
+
+how many ways we can write ?
+or
+TYPES OF CSS :-
+--------------------------------------------------------------------------------------------------------------------------
+*inline css (high prority)
+*internal css (starts at end of the head tag means 2nd priority)
+*externnal css (starts at end of the head tag means 2nd priority)
+
+1. Inline CSS :-
+*given in same line
+*using STYLE ATTRIBUTE
+*ex: <h1 style="color: red; text-align:center;"> CSS Introduction </h1>
+
+2. Internal CSS :-
+*writing in  same html fieldset
+*using STYLE TAG 
+*ex: <style>
+        selectorname{
+            property:value;
+        }
+    </style>
+
+3. External CSS:-
+*writing in separate css file 
+*and linking of css file with the html file 
+*ex: <link rel="stylesheet" href="./intro.css">
+
+LINK (attributes):
+*rel 
+*href 
+--------------------------------------------------------------------------------------------------------------------------
+Div and SPAN TAG :- (non - semantic tags)-no meaning
+--------------------------------------------------------------------------------------------------------------------------
+<div></div>  (block level element , used to group elements for styling and layout purpose , no meaning ,used for dividing webpage into sections)
+
+<span></span>  (inline level element , used to group text or inlline elements, no meaning , used for applying speecific styles to inline content )
+--------------------------------------------------------------------------------------------------------------------------
+SEMANTIC TAGS :- has meaning
+--------------------------------------------------------------------------------------------------------------------------
+*describes the meaning to the develeoper and browser
+*used to improve the structure,readability,accessblity of web page ,making easy for search engine ,screen readers,developer
+
+semantic tags are:-
+*<header>   </header> (tells introduction section  , contains group of navigaton links in webpage)
+*<nav>  </nav> (page links to other pages)
+*<main> </main> (main content of webpage that is unique to document , used for central content)
+*<article>  </article> (independent piece of content that could be reused such as blog)
+*<section>  </section>  (used to group related or thematic grouping of content)
+*<aside>    </aside>    (used for supplementary content)
+*<footer>   </footer>   (found at bottom of the page for copyright info,privacy policies,contact details)
+*<figure>   </figure>  (used for media (iimage,diagram,illustration) elements with caption)
+*<figcaption>   </figcaption> (used for givng caption for <figure></figure> element)
+*<mark> </mark> (text beeing hghlighted for reference prpose)
+*<details></details>    (used for hiding additonal information)
+*<summary></summary>    (used inside ddetails tag to provide headng or summary of the content)
+
+--------------------------------------------------------------------------------------------------------------------------
+SELECTORS :-
+--------------------------------------------------------------------------------------------------------------------------
+TYPES of SELECTORS : 
+*Simple Selector 
+*Combination Selector
+*Pseudo class Selector 
+*Pseudo element Selector
+*Attriibute Selector
+--------------------------------------------------------------------------------------------------------------------------
+1.Simple Selector :- 
+types of simple selector (5)
+*TagName ( tagname )
+*Id ( # )
+*class ( . )
+*grouping ( , )
+*universal ( * )
+
+tagname------target the elements based on tagname itself
+id-----------target the element uniquely using id name (can be duplicated)
+class--------target same css for more than 1 element(class name can be repeated)
+grouping-----target multple element at a time
+universal----targets all the element in the document
+
+2.Combinator Selector:-(combnation of two simple selector)
+types of combinator selector (4)
+*Descendent Selector ( space )
+*Direct Child Selector ( > )
+*Adjacent Sibling Selector ( + ) 
+*General Sibilng Selector ( ~ )
+
+descendent----targets all children,grand children,great grand children
+direct child----targets only children
+adjacent sibilng---targets only the first sbiling
+general sibiling---targets all sibiling
+
+3.Pseudo Selector :-
+:hover(used to change the apperarance of link when user hover or touches it)
+:first-child (applied to first child)
+:last-child(applied to last child}
+:nth-child()(matches based on their position in a group of sbilngs)
+:first-of-type(applies to the frist element of its type within a parent)
+:last-of-type(applies to the last element of its type within a parent)
+:link(apples lnks that not :visited)
+:active(applyies during the element is activated)
+:visited (applied once the link has beeen visited by the user)
+
+4.Pseudo Element Selector:- 
+::before(used to insert content before the element)
+::after(used to insert after the element)
+::first-line(appies styles to the first line of a block level element(usefull for creating drop caps))
+::first-letter(applies style to the first letter of a block-level element)
+::selection(applies at the postiion of highlighted by the user  )
+::marker(used to style the marker box such as bullet points and numbers)
+
+COMBINIING PESUDO ELELEEMNT WITH PSEUDO CLASSES FOR MORE ADVANCED STYLING
+
+ATTRIBUTE SELECTOR (target the element based on the attribute name)
+[attr]:    represents element with an attrbute name
+[attr = value]:  represents element eith an attribute name 
+--------------------------------------------------------------------------------------------------------------------------
+CSS UNITS :
+--------------------------------------------------------------------------------------------------------------------------
+stands for measurement of physical quanties of the samee kind
+TYPES of UNITS :
+*Absolute Unit(fixed unit ,length wiill appear exactly tht size)
+*Relative Unit (length relatve to another length property)
+
+types of absolute units
+*MM (millimeter)
+*CM(centimeter)
+*PX(pixel)
+
+types of relative units
+*%(relative to parent)
+*vw(1viewport width=1%of width)
+*vh(1viewport height=1%of height)
+*em(1em=current font size of the element)
+*rem(1rem=font size of root element )
+--------------------------------------------------------------------------------------------------------------------------
+FONT PROPERTY :- 
+--------------------------------------------------------------------------------------------------------------------------
+1.font-style:value;
+value:
+*normal
+*italic
+*oblique
+
+2.font-weight:value;
+*normal
+*bold
+*bolder
+*lighter
+*numeric values
+
+3.font-size:value;
+*px (absolute size)fixed
+*mm ''
+*cm ''
+*em (relative size)not fixed
+*rem ''
+*%  ''
+
+4.font-family:value;
+value:
+*font names......
+
+--------------------------------------------------------------------------------------------------------------------------
+TEXT PROPERTY:-
+--------------------------------------------------------------------------------------------------------------------------
+
+Text Alignment : 
+
+1.text-algin:value;
+*left
+*right 
+*center 
+*justify
+*start 
+*end
+
+Text Decoration:
+
+1.text-decoration:value;
+value:
+*underline
+*none
+*overline
+*line-through 
+
+2.text-decoration-line:value;
+value:
+*underline
+*none
+*overline
+*line-through
+*blink
+
+3.text-decoration-color:value;
+value:
+*any color........
+
+4.text-decoration-style:value;
+value:
+*solid
+*double 
+*dotted
+*dashed
+*wavy
+
+Text Indentation:
+
+1.text-indent:value;
+value:
+*px
+*em
+*%
+
+2.text-transform:value;
+values:
+*uppercase
+*lowercase
+*capitalize
+*none
+
+3.text-shadow:value;
+*x-axis     y-axis      blur-radius     color
+
+
+Letter and Word Spacing:
+
+1.letter-spacing:value;
+*px
+*em
+*%
+
+2.word-spacing:value;
+*px
+*em
+*%
+
+3.line-height:value;
+*value can be in points
+--------------------------------------------------------------------------------------------------------------------------
+BOX MODEL
+--------------------------------------------------------------------------------------------------------------------------
+1. Content
+*width :values;
+*height :values;
+
+2. Padding :values    or we can use 
+                        padding-top
+                        padding-bottom
+                        padding-right
+                        pdding-left
+
+
+3. Border:values;     or we can use
+                        border-top
+                        border-bottom
+                        border-right
+                        border-left
+values : width color style 
+
+4. margin:values;    or we can use
+                        margin-top
+                        margin-bottom
+                        margin-right
+                        margin-left
+values: top bottom 
+or
+values: right left 
+
+5.border-sizing:values;
+values: 
+*content-box
+*boder-box (mostly used)
+
+--------------------------------------------------------------------------------------------------------------------------
+BORDER PROPERTY
+--------------------------------------------------------------------------------------------------------------------------
+*border-width (top right bottom left)
+*border-style (top right bottom left)
+*border-color (top right bottom left)
+*border-radius (top-left top-right bottom-right bottom-left)
+*border (width style color)
+*individually can give as: [width style color]
+                        border-top 
+                        border-right 
+                        border-bottom 
+                        border-left
+
+--------------------------------------------------------------------------------------------------------------------------
+FLEXBOX:(used to desgn a flexible and responsive layout strucutre without using positioning)
+
+1*flex container(parent)
+2*flex items (direct child)
+
+1.display:flex;
+*row
+
+2.flex-direction:value;
+value:
+*row
+*column
+*row-reverse
+*column-reverse
+
+3.flex-wrap:value;
+value:
+*wrap
+*nowrap
+*wrap-reverse
+
+4.justify-content:value;
+value:
+*flex-start
+*flex-end
+*center
+*space-around
+*space-between
+*space-evenly
+
+5.align-items:value;
+value:
+*flex-start
+*flex-ennd
+*center
+*stretch
+
+6.align-content:value;
+value:(similar to justify-content but applied to multiple ines)
+*flex-start
+*flex-end
+*center
+*space-around
+*space-between
+*space-evenly
+--------------------------
+2.flex items:
+
+--------------------------
+
+1* flex-container:-moz-any
+
+1.display: flex;(for all its direct children)--------row
+
+2.flex-direction(flex items in the flex container)-----row(vertically),column,row-reverse,column-reverse
+            ex:flex-direction: row;
+               flex-direction: row-reverse;
+               flex-direction: column;
+               flex-direction: column-reverse;
+
+3.flex-wrap(wrap onto multiple lines)------
+        ex: nowrap
+            wrap 
+            wrap-reverse(bottom to top)
+
+4.justify-content(algin flex items along the main axis)-----flex-start ,flex-end ,center ,space-between ,space-around ,space-evenly
 
 display(properties)
 *block
@@ -24,3 +405,5 @@ justify-content: center;
 
 justify-content: space-between; makes the space according to the width it have
 same for align-items: space-between; 
+
+
