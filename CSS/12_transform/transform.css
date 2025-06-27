@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(226, 212, 18);
+}
+.outer > .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+.outer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(yellow ,red,green ,orange);
+}
+
+.outer > .box{
+    height: 100px;
+    width: 100px;
+    border:3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer >#box1{
+    background-color:gray;
+    transition: all 2s ease-in;
+    color: aliceblue;
+}
+
+.outer > #box1:hover{
+    transform: translateY(-200px);
+    /*transform: translateX(-200px);
+    transform: translateX(200px);
+    transform: translateY(200px);
+    */
+    transform: translate(200px,200px);
+}
+
+.outer >#box2{
+    background-color: blueviolet;
+    color: aliceblue;
+    transition: all 2s ease-in;
+
+}
+.outer >#box2:hover{
+    transform: rotate(360deg);
+}
+.outer >#box3{
+    background-color: beige;
+    color: red;
+    transition:all 5s ease-in;
+}
+.outer >#box3:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 4px 6px rgba(red, green, blue, alpha);
+}
+.outer >#box4{
+    background-color: aquamarine;
+    color: orange;
+    transition:all 2s ease-in;
+}
+.outer >#box4:hover{
+    box-shadow: 0px 5px 6px gold;
+    transform: skew(180deg);
+}
+/*
+.outer >#box5{
+    background-color: rgb(78, 6, 126);
+    color: aliceblue;
+    transition: all 2s ease-in;
+}
+.outer >#box5:hover{
+    transform:translate(-200,-200) rotate(180deg) scale(1.2) skew(180deg);
+}
+/*translate 2 value */

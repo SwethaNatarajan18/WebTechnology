@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255,0,0);
+    background: linear-gradient(to right,violet,blue,green,orange,yellow,red);
+}
+/*color -rgb , RGBA(red green blue alpha used to give obesity value(255,0,0,1))
+color hunt ,coolores -color webste can get color you want
+back-img-prop-used to addd image if the mage is small it will start repeating the image 
+so use back-no-repeat
+to change the position of mg use
+back-position
+to cover the img in the container use
+back-size:cover
+contans makes the mage size cover
+backgrnd
+direction colors...
+we can give back-color or backgrnd*/
+.outer > .inner {
+    height: 400px;
+    width: 600px;
+    border: 2px solid black;
+    background-color: bisque;
+
+    background-image: url("https://t4.ftcdn.net/jpg/00/64/81/97/360_F_64819783_bO18d6WGTEmDreGV8kHJd1uQ0w7ALl9n.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(red, green, blue, alpha);
+
+}
+.outer > .inner >h1{
+    text-align: center;
+    color: aliceblue;
+    background-image: url();
+}

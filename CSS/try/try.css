@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.outer{
+    background-color: rgb(10, 12, 20);
+    height: 100vh;
+
+}
+.outer > .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    gap:10px
+    overflow-x :scroll;
+    
+}
+.outer > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    
+}

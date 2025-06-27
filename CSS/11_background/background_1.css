@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.outer > h2{
+    font-size: 40px;
+    color: rgb(7, 31, 53);
+}
+.outer >p{
+    font-size: 30px;
+    color: rgb(9, 17, 24);
+    margin-top: 20px;
+    
+}
+#bg1{
+    background-image: url(https://www.smurf.com/characters-smurfs/29/image-thumb__29__smurf/more.6d180d47.png);
+}
+#bg2{
+    background-image: url(https://m.media-amazon.com/images/I/51bwdLSLrSS._UF894,1000_QL80_.jpg);
+}
+#bg3{
+    background-image: url(https://www.smurf.com/characters-smurfs/29/image-thumb__29__smurf/more.6d180d47.png);
+}
+#bg4{
+    background-image: url(https://m.media-amazon.com/images/I/51bwdLSLrSS._UF894,1000_QL80_.jpg);
+}

@@ -1,27 +1,3 @@
-simple selectors
-    1-tagname()
-    2-id(used to identity uniquely  i.e targeting an element indvidualy (css))(#)
-    3-class(whwnever we need to give same css for more than 1 element)(.)
-    4-universal
-    5-group
-    css?
-    how many ways?
-    types?
-    selctors?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 display(properties)
@@ -49,3 +25,47 @@ justify-content: center;
 
 justify-content: space-between; makes the space according to the width it have
 same for align-items: space-between; 
+
+ 
+flexbox:
+
+1.display:flex;
+*row
+
+2.flex-direction:value;
+value:
+*row
+*column
+*row-reverse
+*column-reverse
+
+3.flex-wrap:value;
+value:
+*wrap
+*nowrap
+*wrap-reverse
+
+4.justify-content:value;
+value:
+*flex-start
+*flex-end
+*center
+*space-around
+*space-between
+*space-evenly
+
+5.align-items:value;
+value:
+*flex-start
+*flex-ennd
+*center
+*stretch
+
+6.align-content:value;
+value:(similar to justify-content but applied to multiple ines)
+*flex-start
+*flex-end
+*center
+*space-around
+*space-between
+*space-evenly
