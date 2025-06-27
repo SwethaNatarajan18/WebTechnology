@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    height: 100vh;
+}
+.outer >.inner{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid black;
+}
+.row1{
+    display: flex;
+}
+.black{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+.white{
+    height: 50px;
+    width: 50px;
+}
+.row2{
+    display: flex;
+}
+.row3{
+    display: flex;
+}
+.row4{
+    display: flex;
+}
+.row5{
+    display: flex;
+}
+.row6{
+    display: flex;
+}
+.row7{
+    display: flex;
+}
+.row8{
+    display: flex;
+}
+/*.inner > .row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    border: 10px 10px 10px 10px ;
+    box-shadow:0px 5px 5px rgb(19, 14, 14) ;
+}
+.inner > .row1 > .black{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    
+}
+.inner > .row1 >.white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(250, 244, 244);
+}
+.inner > .row2 > .black{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    
+}
+.inner > .row2 >.white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(250, 244, 244);
+}
+    */
