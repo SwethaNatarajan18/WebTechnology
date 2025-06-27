@@ -13,7 +13,7 @@ p{paragraph-$}*5 ----->produces
 download extensions -----> auto close tag, auto rename tag
 ctrl+d ----> shows the table of content 
 --------------------------------------------------------------------------------------------------------------------------
-HTML -> (HyperText Markup Language)
+HTML -> (HyperText Markup Language) used to create any webpage
 
 Hypertext - text that contains links which makes user to jump from one document to another 
 Markup    -used to define the strucutre and presentation of content in a document
@@ -21,6 +21,7 @@ Markup    -used to define the strucutre and presentation of content in a documen
 <!Doctype html> --> tells the version of html
 <meta charset="UTF-8">  --> character encoding for the document
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> --> responsive page used to display on other devices
+html tag -is the root TAG
 <head> </head> --> contains meta information
 <body> </body> --> contains content need to be displayed on the web page or browser
 <title> </title> --> sets the title appeared on the browser tab
@@ -104,7 +105,7 @@ syntax :
 Types of Elements : inline ,block ,inline-block
 
 *inline level element (same line , no height and width) takkes content size
-ex:formatting tags (<b></b> , <i></i>)
+ex:formatting tags (<b></b> , <i></i>, <span> </span> )
 
 *block level element  (takes full width of its parent , has height and width)
 ex:heading tags ( <h1> </h1> , <div> </div> )
@@ -115,6 +116,21 @@ ex:<img src="" alt="">
     <button></button>
     <select name="" id=""></select>
     <textarea name="" id=""></textarea>
+
+
+3 types of elements:
+     *block level element
+               It will take full width of its parent
+               it will be coming in next line
+               we can give height and weight
+     *inline level element
+               It will be coming in the same line
+               It will can take only the content
+               we cannot provide height and weight
+     *inline-block element
+               It is the combination of both
+               It will coming in same line
+               we can provide height and width
 -----------------------------------------------------------------------------------------------------
 ATTIRBUTES in HTML :
 -----------------------------------------------------------------------------------------------------
@@ -292,3 +308,8 @@ input(attributes):(collect user data)
 *min length ,max length (defines the length of the field)
 *autofocus(automaticaly focuses on the input field when page loads)
 ------------------------------------------------------------------------------------------------------
+textarea():contains rows and columns
+
+div and span :
+block level element-----------nlne level elemenet
+---------------------------------to select some area use span
