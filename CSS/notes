@@ -116,7 +116,7 @@ direct child----targets only children
 adjacent sibilng---targets only the first sbiling
 general sibiling---targets all sibiling
 
-3.Pseudo Selector :-
+3.Pseudo class Selector :-
 :hover(used to change the apperarance of link when user hover or touches it)
 :first-child (applied to first child)
 :last-child(applied to last child}
@@ -155,8 +155,8 @@ types of absolute units
 
 types of relative units
 *%(relative to parent)
-*vw(1viewport width=1%of width)
-*vh(1viewport height=1%of height)
+*vw(1viewport) width=1%of width)
+*vh(1viewport )height=1%of height)
 *em(1em=current font size of the element)
 *rem(1rem=font size of root element )
 --------------------------------------------------------------------------------------------------------------------------
@@ -201,9 +201,11 @@ Text Alignment :
 *start 
 *end
 
+color :
+
 Text Decoration:
 
-1.text-decoration:value;
+1.text-decoration:value; 
 value:
 *underline
 *none
@@ -270,7 +272,7 @@ BOX MODEL
 *width :values;
 *height :values;
 
-2. Padding :values    or we can use 
+2. Padding :values    or we can use (space b/w border and content)
                         padding-top
                         padding-bottom
                         padding-right
@@ -284,7 +286,7 @@ BOX MODEL
                         border-left
 values : width color style 
 
-4. margin:values;    or we can use
+4. margin:values;    or we can use (space b/w the border and the outer)
                         margin-top
                         margin-bottom
                         margin-right
@@ -295,8 +297,8 @@ values: right left
 
 5.border-sizing:values;
 values: 
-*content-box
-*boder-box (mostly used)
+*content-box (not nclude border and padding even though given t wont inclue even you gave height and width)
+*boder-box (mostly used)border and padding and content will be included
 
 --------------------------------------------------------------------------------------------------------------------------
 BORDER PROPERTY
@@ -313,12 +315,14 @@ BORDER PROPERTY
                         border-left
 
 --------------------------------------------------------------------------------------------------------------------------
-FLEXBOX:(used to desgn a flexible and responsive layout strucutre without using positioning)
-
+FLEXBOX:(used to desgn a flexible and responsive layout strucutre without using positioning)arrange the content in row or column wise
+justify-axis ===main axis(flex-direction)
+align-item -----cross axis
 1*flex container(parent)
 2*flex items (direct child)
-
+-------------------------------------------FLEX CONTAINER------------------------------------------------------------------
 1.display:flex;
+ (given to the parent)
 *row
 
 2.flex-direction:value;
@@ -334,7 +338,7 @@ value:
 *nowrap
 *wrap-reverse
 
-4.justify-content:value;
+4.justify-content:value;(arrange in main axis)
 value:
 *flex-start
 *flex-end
@@ -343,7 +347,9 @@ value:
 *space-between
 *space-evenly
 
-5.align-items:value;
+gap:::::::
+
+5.align-items:value;(arrange in cross axis)
 value:
 *flex-start
 *flex-ennd
@@ -407,3 +413,6 @@ justify-content: space-between; makes the space according to the width it have
 same for align-items: space-between; 
 
 
+responsiveness:
+in img:
+object fit is used fit the size of image according to the height and widtrh given 
