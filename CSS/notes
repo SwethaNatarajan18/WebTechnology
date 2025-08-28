@@ -1,7 +1,7 @@
 always start css with 
-unversal selector as given below:
+universal selector as given below:
 
-*{
+*{       
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,36 +10,41 @@ unversal selector as given below:
 anything need to be center use
 
 display:flex;                (takes in row)
-justify-content:center;      (takes in column)
-align-item:center;           (takes to center)
+justify-content:center;      (takes in column)main axis
+align-item:center;           (takes to center)cross axis
 
 anything in border need to be curve use
 
 border-radius:value;
 value:- can be any numbers above 10px
 
+to give border  or to see the border give border property:
+
+border: size style color;
+
 
 --------------------------------------------------------------------------------------------------------------------------
-
-CSS - Cascading Style Sheet
-used for styliing and  presentation and arranging the values
+1.CSS - Cascading Style Sheet
+used for styling and  presentation and arranging the values
 
 how many ways we can write ?
 or
-TYPES OF CSS :-
+5. TYPES OF CSS :-
 --------------------------------------------------------------------------------------------------------------------------
 *inline css (high prority)
 *internal css (starts at end of the head tag means 2nd priority)
 *externnal css (starts at end of the head tag means 2nd priority)
 
 1. Inline CSS :-
-*given in same line
+*given in same line(elements)
 *using STYLE ATTRIBUTE
+*while the style attribute contains the property and value 
 *ex: <h1 style="color: red; text-align:center;"> CSS Introduction </h1>
 
 2. Internal CSS :-
 *writing in  same html fieldset
 *using STYLE TAG 
+*whle the style tag contains the selector name with their property and value
 *ex: <style>
         selectorname{
             property:value;
@@ -54,7 +59,7 @@ TYPES OF CSS :-
 LINK (attributes):
 *rel 
 *href 
---------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------ol---------------------------------------------------------------
 Div and SPAN TAG :- (non - semantic tags)-no meaning
 --------------------------------------------------------------------------------------------------------------------------
 <div></div>  (block level element , used to group elements for styling and layout purpose , no meaning ,used for dividing webpage into sections)
@@ -67,21 +72,25 @@ SEMANTIC TAGS :- has meaning
 *used to improve the structure,readability,accessblity of web page ,making easy for search engine ,screen readers,developer
 
 semantic tags are:-
-*<header>   </header> (tells introduction section  , contains group of navigaton links in webpage)
-*<nav>  </nav> (page links to other pages)
-*<main> </main> (main content of webpage that is unique to document , used for central content)
-*<article>  </article> (independent piece of content that could be reused such as blog)
-*<section>  </section>  (used to group related or thematic grouping of content)
-*<aside>    </aside>    (used for supplementary content)
-*<footer>   </footer>   (found at bottom of the page for copyright info,privacy policies,contact details)
-*<figure>   </figure>  (used for media (iimage,diagram,illustration) elements with caption)
-*<figcaption>   </figcaption> (used for givng caption for <figure></figure> element)
-*<mark> </mark> (text beeing hghlighted for reference prpose)
-*<details></details>    (used for hiding additonal information)
-*<summary></summary>    (used inside ddetails tag to provide headng or summary of the content)
+
+(block level semantic tags)
+1*<header>   </header> (tells introduction section  , contains group of navigaton links in webpage)
+2*<nav>  </nav> (page links to other pages)
+3*<main> </main> (main content of webpage that is unique to document , used for central content)
+4*<article>  </article> (independent piece of content that could be reused such as blog)
+5*<section>  </section>  (used to group related or thematic grouping of content)
+6*<aside>    </aside>    (used for supplementary content)
+7*<footer>   </footer>   (found at bottom of the page for copyright info,privacy policies,contact details)
+8*<figure>   </figure>  (used for media (iimage,diagram,illustration) elements with caption)
+9*<figcaption>   </figcaption> (used for givng caption for <figure></figure> element)
+10*<mark> </mark> (text beeing hghlighted for reference prpose)
+
+(inline semantic tags)
+11*<details></details>    (used for hiding additonal information)
+12*<summary></summary>    (used inside ddetails tag to provide headng or summary of the content)
 
 --------------------------------------------------------------------------------------------------------------------------
-SELECTORS :-
+2. SELECTORS :-
 --------------------------------------------------------------------------------------------------------------------------
 TYPES of SELECTORS : 
 *Simple Selector 
@@ -141,7 +150,7 @@ ATTRIBUTE SELECTOR (target the element based on the attribute name)
 [attr]:    represents element with an attrbute name
 [attr = value]:  represents element eith an attribute name 
 --------------------------------------------------------------------------------------------------------------------------
-CSS UNITS :
+7.CSS UNITS :
 --------------------------------------------------------------------------------------------------------------------------
 stands for measurement of physical quanties of the samee kind
 TYPES of UNITS :
@@ -160,7 +169,7 @@ types of relative units
 *em(1em=current font size of the element)
 *rem(1rem=font size of root element )
 --------------------------------------------------------------------------------------------------------------------------
-FONT PROPERTY :- 
+3. FONT PROPERTY :- (font-style ,font-size ,font-weight  ,font-family)
 --------------------------------------------------------------------------------------------------------------------------
 1.font-style:value;
 value:
@@ -188,7 +197,7 @@ value:
 *font names......
 
 --------------------------------------------------------------------------------------------------------------------------
-TEXT PROPERTY:-
+4. TEXT PROPERTY:-
 --------------------------------------------------------------------------------------------------------------------------
 
 Text Alignment : 
@@ -266,7 +275,7 @@ Letter and Word Spacing:
 3.line-height:value;
 *value can be in points
 --------------------------------------------------------------------------------------------------------------------------
-BOX MODEL
+5. BOX MODEL
 --------------------------------------------------------------------------------------------------------------------------
 1. Content
 *width :values;
@@ -274,6 +283,7 @@ BOX MODEL
 
 2. Padding :values    or we can use (space b/w border and content)
                         padding-top
+                        padding : (top & bottom) (left & right)
                         padding-bottom
                         padding-right
                         pdding-left
@@ -284,7 +294,7 @@ BOX MODEL
                         border-bottom
                         border-right
                         border-left
-values : width color style 
+values : width style color  
 
 4. margin:values;    or we can use (space b/w the border and the outer)
                         margin-top
@@ -295,14 +305,18 @@ values: top bottom
 or
 values: right left 
 
-5.border-sizing:values;
+5.box-sizing:values;
 values: 
-*content-box (not nclude border and padding even though given t wont inclue even you gave height and width)
-*boder-box (mostly used)border and padding and content will be included
-
+*content-box (not include border and padding even though given t wont inclue even you gave height and width)
+*border-box (mostly used)border and padding and content will be included
+--------------------------------------------------------------------------------------------------------------------------
+6. display -------------contains :
+        inline
+        block
+        inline-block
 --------------------------------------------------------------------------------------------------------------------------
 BORDER PROPERTY
---------------------------------------------------------------------------------------------------------------------------
+---------------we can give border at top ,bottom,left,right and we can also give the width ,style,color for the border-----------------------------------------------------------------------------------------------------------
 *border-width (top right bottom left)
 *border-style (top right bottom left)
 *border-color (top right bottom left)
@@ -315,13 +329,14 @@ BORDER PROPERTY
                         border-left
 
 --------------------------------------------------------------------------------------------------------------------------
-FLEXBOX:(used to desgn a flexible and responsive layout strucutre without using positioning)arrange the content in row or column wise
+8.FLEXBOX:(used to desgn a flexible and responsive layout strucutre without using positioning)arrange the content in  row or column wise
+--------------------------------------------------------------------------------------------------------------------------
 justify-axis ===main axis(flex-direction)
 align-item -----cross axis
 1*flex container(parent)
 2*flex items (direct child)
 -------------------------------------------FLEX CONTAINER------------------------------------------------------------------
-1.display:flex;
+1.display:flex;             --for all direct children
  (given to the parent)
 *row
 
@@ -392,6 +407,7 @@ display(properties)
 *inlne
 *none
 *flex(gap property is used to give space between the elements in flex container)
+*grid
 
 flex -(arrange the elements in rowise or columnwise)default value is row
 flex-direction 
@@ -413,6 +429,308 @@ justify-content: space-between; makes the space according to the width it have
 same for align-items: space-between; 
 
 
-responsiveness:
+flex-basis:-
+            defnes the default size of an element before the remaining spacee is distributed
+--------------------------------------------------------------------------------------------------------------------------
+9.OVERFLOW:
+--------------------------------------------------------------------------------------------------------------------------
+controls the content when it overflows its container  box. 
+
+Syntax:
+overflow: value;
+
+values:
+-------
+*visible(default)---rendered outside the element's box. 
+*hidden-------------the rest of the content is hidden. No scrollbars are provided to view the hidden content.
+*scroll-------------scrollbar is provided to scroll and view the hidden content. The scrollbar appears whether or not the content actually overflows.
+*auto---------------Similar to scroll, but the scrollbar is only added if the content overflows. If there is no overflow, no scrollbar is visible
+--------------------------------------------------------------------------------------------------------------------------
+visible----visible outside the box (i.e overflow occurs)
+hidden-----overflow content get hidden(i.e hidden datas cant able to see)
+scroll----scrolls the content if the contetn is overflow or not and shows scroll bar at vertical and horizontal
+auto------scrolls when the content is getting overflow only
+
+
+::-webkit-scrollbar{
+    display: none;  /*hides the scrool bar*/
+}
+--------------------------------------------------------------------------------------------------------------------------
+10.TRANSITION: used to create smooth animations when changing the properties of an element   
+            it allows to control the speed of property changes for a particular duration rther them occur instantaneously
+            
+--------------------------------------------------------------------------------------------------------------------------
+  *  transition-property
+  *  transition-duration
+  *  transition-timing-function
+  *  transition-delay
+
+  or
+
+  transition:property duration timing-function delay;
+
+  property( all  )---effect is applied (ex: width,height,background-color.......)
+  duration( 1s  )---length of time taken to complelete the transition
+  timing-function(  ease,linear,ease-in,ease-out,ease-in-out  )---speed curve
+  delay(  1s  )---specifies delay before transition starts
+--------------------------------------------------------------------------------------------------------------------------
+12.TRANSFORM:-
+--------------------------------------------------------------------------------------------------------------------------
+used to apply various transformation to an element such as moving,rotating,scaling or skewing it
+
+transform functions:-  ex: transform: translate(50px,100px)
+-----------------------
+translate(x,y) ---moves the element from ts current position(moves horizontaly by x and vertically by y axis)
+rotate(angle) ---rotates the element by the specified angle in degree
+scale(x,y) ---resizes the element(scales horizontaly by x and vertically by y axis)
+skew(x-angle,y-angle) ---skews the element along x and y axis
+
+transform origin :-  ex: transform-origin:value;
+       ( value :-top,center,bottom,left,right or specifiic coordinates)
+
+--------------------------------------------------------------------------------------------------------------------------
+11. BACKGROUND: used to set all the background propertes in one declaration
+--------------------------------------------------------------------------------------------------------------------------
+    1.*background-color (background-color:blue;)
+    2.*background-image (background-image:url('image.png');)
+    3.*background-repeat (background-repeat:no-repeat)
+    4.*background-position (background-position: 100% 100%;)
+    5.*background-size (background-size:cover)
+    6.*background-attachment (background-attachment:fixed)
+    7.*background (background: linear-gradient(to right,violet,blue,green,orange,yellow,red);)
+
+
+    *background-color(sets background color of an element)-use color names,RGBA,HSL names
+    *background-image(sets image as an background of an element) -use url to specify an image or use none to remove bg image
+    *background-repeat(defines how background image is repeated )-use repeat,repeat-x,repeat-y,no-repeat
+    *background-position(specifies the initial position of the background image)-use top,bottom,left,right,center or 50% 50% or 10px 20px
+    *background-size(specifies the size of the background size)-use auto,cover,contain or sizes such as (100px 50px ,50% 50%)
+    *background-attachment(bg image is fixed relative to the viewportor scrolls with the content)-use scroll(scrolls with content),fixed(stay fixed relative to the viewporter),local(scrolls with the content but not the entire page)
+    ex:
+    background: linear-gradient(to right,violet,blue,green,orange,yellow,red);
+
+    background:linear gradient();
+
+--------------------------------------------------------------------------------------------------------------------------
+13.POSITION: shows how an element is positioned in the document flow and how it interacts with other element
+--------------------------------------------------------------------------------------------------------------------------
+ex: position: value;
+
+values:
+----------
+*static
+*relative
+*absolute
+*fixed
+*sticky
+
+1.relative:-(positions the element relative to its normal/static position)
+*other element positions are not affected 
+*we can adjust the relative position based on its original position by using (top,left,bottom,right)
+*positioned relative to its normal position
+*it will change position based on its actual position
+
+2.absolute:-(positions the element relative to the nearest positioned ancestor or viewport if no ancestor is positioned)
+*element will be coming out of the document flow or other elements positions are affected
+*change position based on the view port(out off)
+*we can adjust  position based on the view port(right,left,bottom,top)
+*if no ancestor then positioned relatifve to the initial containg block
+*element is removed from normal document flow  and positioned relative to its nearest positioned ancestor
+
+3.fixed:-
+*stay fixed in position even when the page is scrolled
+*element removed from the normal document flow and positioned relative to the viewport
+*we can adjust  position using (right,left,bottom,top)
+
+4.sticky:-
+*element behaves like relative until a given offset position is met, then it behaves like fixed(toggles b/w relative and fixed depending upon the scroll position)
+*we can adjust  position using (right,left,bottom,top)
+*element is positioned based on the users scroll postion
+
+5.static:-(default)
+*default position for all the HTML elements
+*elements are positioned according to the normal documnet flow
+*we can't adjust  position using (right,left,bottom,top)
+
+Z-INDEX:-( takes the content should be seen able in front of any element value can be (default=0)1 to any number after reaching the condition it will become fixed)
+---------
+*controls the stacking order of positioned elements
+*higher z-index values stack elements in front of those with lower values
+
+--------------------------------------------------------------------------------------------------------------------------
+14.ANIMATION: (used to create smooth transition and dynamic effects by using css properties)
+--------------------------------------------------------------------------------------------------------------------------
+
+ex :- animation : slideIn 2s ease-in-out 1s infinite alternate forwards;
+
+Key Components :- 
+
+1. @Keyframes    -defines the stages of animation and the style at each stage and we can specify the animation using from and to keyword
+
+syntax:
+-------
+*@Keyframes animationname{
+    from{
+        transform: value;
+    }
+    to{
+        transform: value;
+    }
+}
+
+2.Animation properties:- used to apply and control the animation of an element
+            *animation-name
+            *animation-duration
+            *animation-timing-function
+            *animation-delay
+            *animation-iteration-count
+            *animation-direction
+            *animation-fill-mode
+or
+            *animation
+
+1.animation-name -specifies the name given to the @Keyframes
+ex:
+@Keyframes animation_name{
+    from{
+        transform:value;
+    }
+    to{
+        transform:value;
+    }
+}
+
+2.animation-duration -tells how long the animation takes to complete one cycle
+ex:
+animation-duration : 2s;
+
+3.animation-timing-function - specifies the speed curve of the animation it can be (linear,ease,esae-in,ease-out,ease-in-out) 
+ex:
+animation-timing-function:ease-in
+
+4.animation-delay -sets delay before the animation starts
+ex:
+animation-delay :1s
+
+5.animation-iteration-count - tells how many time's the animation to repeat
+ex:
+animation-iteration-count: infinite
+
+6.animation-direction - tells whether the anmation should play forward , backward , or alternate b/w two rows and values can be (normal,reverse,alternate)
+ex:
+animation-direction : alternate
+
+7.animation-fill-mode - tells how to style before the animation starts and after the animation ends and values can be(none,forwards,backwards,both)
+ex:
+animation-fill-mode: forwards ;
+
+8.animation - used to set all the animaton properties in one line
+ex:
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+i.e      slideIn   2s    ease-in-out    1s      infinite        alternate       forwards ;
+--------------------------------------------------------------------------------------------------------------------------
+15.GRID:(makes the content to get fixed with the size)
+--------------------------------------------------------------------------------------------------------------------------
+     * allows developers to design web pages by organizing content into rows and columns
+     * it is 2dimensional system, (i.e)it handles layouts in both rows and columns simultaneously
+
+GRID contains 2 concepts :
+1*Grid container(parent)
+2*Grid Items(direct child )
+
+1.GRID CONTAINER:-
+                    1.1.grid-template-columns ( defines the number and size of columns in the grid)(gives the separate size of the colmn)
+
+                    1.2.grid-template-rows  (   defines the number and size of rows in the grid)(how many rows is there that many rows we can give size)
+
+                    1.3.gap     (specifies the spacing b/w grid rows nd columns) using row-gap and column-gap
+
+                    1.4.grid-auto-rows ( defines the size of rows that are automatcally generated)(gives the samee size for all rows)
+
+                    1.5.justify-content (align the entire grid horizontally within the container)(arranges the every elements in row wise center)
+                    
+                    1.6.align-content (align the entire grid vertically within the container)(here we are not using align-items because using of that property makes to create new rows with boxes)
+
+2.GRID ITEMS:-
+                    2.1.grid-column (specifies the starting and ending column for a grid item)
+                    2.2.grid-row    (specifies the starting and ending rows for a grid item)
+
+ex:-
+-----
+grid-template-columns: 200px 250px 220px;           or        grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 200px 250px 220px;              or        grid-template-columns: 1fr 1fr 1fr;
+grid-auto-rows:100px;
+justify-content:space-between;
+align-content:space-around;
+grid-column: span 2; (like colspan)
+grid-row: span 3; (like rowspan)
+
+D/B CSS GRID  and   FLEXBOX
+
+css Grid:-
+-----------
+*2dimensional layout system(i.e)rows and columns.
+*best for creatiing complex layouts involving b/h rows and columns
+*allows placement and Alignment of items b/h verticaly and horizontally
+*it focuses on the entire grid container structure
+*items can span multiple rows and columns(grid-column,grid-row)
+*more complex syntax for setting up grids
+*Ideal for page layouts,dashboards,complex UI designs
+
+FlexBox:-
+----------
+*1dimensional layout system(i.e)either rows or column
+*best for aligning  and distributing itemms in a single row or column
+*align items in main or cross axis in one dimension
+*focus on align indvidual items
+*reordering  works within a single row or column(order)
+*simple syntax for arranging items in one direction
+*Ideal for navbars,toolbars, linear alignment
+--------------------------------------------------------------------------------------------------------------------------
+16.FLOAT_CLEAR:
+--------------------------------------------------------------------------------------------------------------------------
+1. Float in CSS (left or right)
+used to position elements to the left or right, allowing other elements to wrap around them.
+values:
+-------
+*left(align the element to the left , and other content wraps around it )
+*right(align the element to the right , and other content wraps around it )
+*none(default value ,the element does not float)
+*inherit(from its parent)
+
+2. Clear in CSS (used to prevent elements from wrapping around floated elements)
+values:
+-------
+*left(clears content from floating elements on the left)
+*right(clears contetn from floating elements on the right)
+*both(clears b/h left and right floated elements)
+*none(doesnot clear floats)
+--------------------------------------------------------------------------------------------------------------------------
+17.RESPONSIVE: / Media Query:- are essential for cereating responsive web designs that adapt to different screen ,orientations, and resolutions.
+--------------------------------------------------------------------------------------------------------------------------
+syntax:
+-------
+@media (condition){
+    /*CSS rules here*/
+}
+
+Media Features:(condition)
+---------------
+*width and height  --(  min-width,  max-width,  min-height, max-height)
+*Orientation       --  values:(*portraits(height is greater)(targets devices with a portrait orientation),
+                               *landscape(width is greater)(targets devices with a landscap oriientation))
+
+example:-
+@media(min-width:600px) and (max-width:1200px){
+    /*Styles for screens b/w 600px and 1200px wide*/
+}
+
+(responsiveness:
 in img:
-object fit is used fit the size of image according to the height and widtrh given 
+object fit is used fit the size of image according to the height and widtrh given )
+
+
+--------------------------------------------------------------------------------------------------------------------------
+FLEX_BASIS: (flex-basis:-
+            defnes the default size of an element before the remaining spacee is distributed)
+-----------------------------------------------over---------------------------------------------------------------------------
